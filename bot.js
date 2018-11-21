@@ -316,7 +316,7 @@ client.on('message', message => {
     if (message.content === 'a!help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
-        .setDescription('**برفكس البوت (!)**')
+        .setDescription('**برفكس البوت (a!)**')
         .addField('play', 'لتشغيل اغنية')
         .addField('join', 'دخول رومك الصوتي')
         .addField('disconnect', 'الخروج من رومك الصوتي')
@@ -326,6 +326,7 @@ client.on('message', message => {
         .addField('queue', 'اظهار قائمة التشغيل')
 	.addField('np', 'اظهار الاغنية اللي انت مشغلها حاليا')
        .addField(' تمت برمجة البوت من قبل جوكر')
+	.addField(' أبو عجييييييل')
 	.setFooter('(general_commands) لاظهار الاوامر العامة')
       message.channel.send(helpEmbed);
     }
